@@ -1,0 +1,68 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="6.0.16" />
+    <PackageReference Include="Microsoft.Data.Sqlite" Version="6.0.16" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="6.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="6.0.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.16" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.16">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="System.Linq.Dynamic.Core" Version="1.3.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Database\" />
+    <None Remove="Database\Models\" />
+    <None Remove="Database\DbContexts\" />
+    <None Remove="Microsoft.EntityFrameworkCore.Sqlite" />
+    <None Remove="Microsoft.Data.Sqlite" />
+    <None Remove="Database\Repositories\" />
+    <None Remove="Database\Repositories\Interfaces\" />
+    <None Remove="Database\Repositories\Implementations\" />
+    <None Remove="Microsoft.Extensions.Configuration" />
+    <None Remove="Services\" />
+    <None Remove="Services\Interface\" />
+    <None Remove="Services\Implementation\" />
+    <None Remove="Network\" />
+    <None Remove="Network\Interface\" />
+    <None Remove="Network\Impementation\" />
+    <None Remove="Controllers\Resources\" />
+    <None Remove="Controllers\Resources\Requests\" />
+    <None Remove="Controllers\Resources\Responses\" />
+    <None Remove="Microsoft.Extensions.Logging" />
+    <None Remove="Newtonsoft.Json" />
+    <None Remove="Microsoft.EntityFrameworkCore" />
+    <None Remove="Microsoft.EntityFrameworkCore.Design" />
+    <None Remove="Extentions\" />
+    <None Remove="System.Linq.Dynamic.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Database\" />
+    <Folder Include="Database\Models\" />
+    <Folder Include="Database\DbContexts\" />
+    <Folder Include="Database\Repositories\" />
+    <Folder Include="Database\Repositories\Interfaces\" />
+    <Folder Include="Database\Repositories\Implementations\" />
+    <Folder Include="Services\" />
+    <Folder Include="Services\Interface\" />
+    <Folder Include="Services\Implementation\" />
+    <Folder Include="Network\" />
+    <Folder Include="Network\Interface\" />
+    <Folder Include="Network\Impementation\" />
+    <Folder Include="Controllers\Resources\" />
+    <Folder Include="Controllers\Resources\Requests\" />
+    <Folder Include="Controllers\Resources\Responses\" />
+    <Folder Include="Extentions\" />
+  </ItemGroup>
+</Project>
