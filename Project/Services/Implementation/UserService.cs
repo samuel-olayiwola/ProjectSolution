@@ -47,8 +47,10 @@ namespace Project.Services.Implementation
             _logger.LogInformation("{OperationType} operation performed at {DateTime}", activity, DateTime.UtcNow);
         }
 
+        // --- new change, in the form of a comment ---
 
         //RandomApi does not allow getting by ID
+
 
         //public async Task<UserResponse> GetUser(int id)
         //{
